@@ -18,11 +18,11 @@ function AdvertisedBikesCard({ AdvertisedBike }) {
     return (
         <div>
             
-            <div className="card grid grid-cols-2 bg-base-100 shadow-xl">
+            <div className="card lg:grid grid-cols-2 bg-base-100 shadow-xl sm:flex">
                 <figure><img className='' src={img} alt="Album" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title text-5xl">{Brand_category} </h2>
-                    <ul>
+                <div className="card-body text-center sm:text-center md:text-center lg:text-left">
+                    <h2 className=" md:text-center sm:text-center text-5xl lg:text-left">{Brand_category} </h2>
+                    <ul className='text-xl'>
                         <li>Bike Model: {Bike_Model}</li>
                         <li>Condition: {condition}</li>
                         <li>Purchase on : {purchase}</li>

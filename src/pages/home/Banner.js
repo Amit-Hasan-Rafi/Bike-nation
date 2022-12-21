@@ -12,8 +12,8 @@ function Banner() {
                         <span className='text-orange-500 mx-3'>Bike</span>
                         <span className='text-white'>Nation</span>
                     </Link>
-                    <p className="mb-5 mt-2 text-xs">Sell Your old bike and buy your Dream Bike. Best Place for marketing of your old bike for sell and grab new  recondition bike</p>
-                    <button className="btn btn-ghost bg-orange-500">find bikes</button>
+                    <p className="mb-5 mt-2 text-xs hidden lg:block md:block">Sell Your old bike and buy your Dream Bike. Best Place for marketing of your old bike for sell and grab new  recondition bike</p>
+                    <button className="btn btn-ghost bg-orange-500 hidden justify-center w-full lg:block md:block">find bikes</button>
                 </div>
             </div>
         </div>

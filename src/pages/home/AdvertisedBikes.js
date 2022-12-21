@@ -14,8 +14,8 @@ function AdvertisedBikes() {
 
   return (
     <div>
-        <h1 id='s-font' className='lg:text-5xl md:text-3xl sm:text-2xl divider' >BIKES ON ADVERTISED</h1>
-        <div className='p-20' >
+        <h1 id='s-font' className='lg:text-5xl md:text-3xl text-2xl divider' >BIKES ON ADVERTISED</h1>
+        <div className='lg:p-20 p-8' >
             {
                 AdvertisedBikes?.map(AdvertisedBike=><AdvertisedBikesCard
                 key={AdvertisedBike._id}

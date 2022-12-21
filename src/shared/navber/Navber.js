@@ -34,19 +34,28 @@ function Navber() {
                     <ul tabIndex={1} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link to='/dashboard'>Dashboard</Link></li>
                         <li><Link to='/blogs'>Blogs</Link></li>
+                        {user?.uid ?
+
+                            <Link onClick={handleLogOut}><button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md md:hidden bg-orange-600 mx-2">LogOut</button></Link>
+                            :
+                            <>
+                                <Link to='/login'><button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md md:hidden bg-orange-600 w-44 mx-2 ">LogIn</button></Link>
+                                <Link to='/ragister'><button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md md:hidden bg-orange-600 w-44 mx-2">Ragister</button></Link>
+                            </>
+                        }
                     </ul>
                 </div>
             </div>
             <div id='logo' className="navbar-center">
-                <Link to='/' className="btn btn-ghost normal-case text-4xl">
+                <Link to='/' className="btn btn-ghost normal-case lg:text-4xl md:text-4xl text-6xl">
                     <span className='text-orange-500 mx-1'>Bike</span>
                     <span className='text-balck'>Nation</span>
                 </Link>
             </div>
-            <div className="navbar-end mx-2">
+            <div className="navbar-end mx-2 hidden lg:block md:block">
                 {
                     user?.uid ?
-                        <div className='flex items-center'>
+                        <div className='flex justify-end'>
                             <div className="avatar flex-row-reverse items-center indicator mx-2 lg:w-full md:3/4 sm:2/4">
                                 <span className="indicator-middle badge badge-success">{ }</span>
                                 <div className="w-12 rounded-full ring ring-orange-400 ring-offset-base-100 ring-offset-2s">
@@ -63,7 +72,7 @@ function Navber() {
                         </>
                 }
             </div>
-            <label  htmlFor="dashboard-drawer" tabIndex={3} className="btn btn-ghost btn-circle lg:hidden">
+            <label htmlFor="dashboard-drawer" tabIndex={3} className="btn btn-ghost btn-circle lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
         </div>

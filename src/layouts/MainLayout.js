@@ -6,7 +6,7 @@ import Navber from '../shared/navber/Navber'
 function MainLayout() {
   return (
     <div>
-       <Navber></Navber>
+       <Navber ></Navber>
        <Outlet></Outlet>
        <Footer></Footer>
     </div>

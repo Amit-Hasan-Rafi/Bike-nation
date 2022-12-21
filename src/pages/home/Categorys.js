@@ -22,9 +22,9 @@ function Categorys() {
     }
 
     return (
-        <div className='text-center mt-20 p-20' >
-            <h1 id='s-font' className='lg:text-5xl md:text-3xl sm:text-2xl divider' >THE BRAND'S CATEGORY WE HAVE</h1>
-            <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-11 p-16'>
+        <div className='text-center lg:mt-20 lg:p-20 mt-14 ' >
+            <h1 id='s-font' className='lg:text-5xl md:text-3xl text-xl divider' >THE BRAND'S CATEGORY WE HAVE</h1>
+            <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 lg:gap-11 md:gap-8 gap-6 lg:p-16 md:p-11 p-8'>
                 {
                     categorys.map(category =>
                         <CategorysCard
